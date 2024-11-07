@@ -5,11 +5,6 @@ import Navbar from "@/components/Navbar";
 
 // import local Font
 import localFont from "next/font/local";
-const poppins = localFont({
-  src: "./fonts/Poppins-ExtraBold.ttff",
-  variable: "--font-poppins",
-  weight: "100 900",
-});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
