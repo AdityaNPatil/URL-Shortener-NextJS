@@ -11,10 +11,10 @@ const Navbar = () => {
             <ul className='flex justify-center gap-4 items-center'>
                 <Link href="/"><li>Home</li></Link>
                 <Link href="/about"><li>About</li></Link>
-                <Link href="/generate"><li>Shorten</li></Link>
+                <Link href="/shorten"><li>Shorten</li></Link>
                 <Link href="/contact"><li>Contact Us</li></Link>
                 <li className='flex gap-3'>
-                    <Link href="/generate"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
+                    <Link href="/shorten"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
                     <Link href="/github"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
                 </li>
             </ul>

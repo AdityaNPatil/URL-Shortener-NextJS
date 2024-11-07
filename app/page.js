@@ -22,7 +22,7 @@ export default function Home() {
           <p className="text-center">We are the most straightforward URL shortener - No sign in needed. Most will ask you to Sign Up or Sign In, no need to give your details here
             .We understand your needs and hence we have created this URL shortener</p>
           <div className='flex gap-3'>
-            <Link href="/generate"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
+            <Link href="/shorten"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
             <Link href="/github"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
           </div>
         </div>
