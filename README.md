@@ -1,4 +1,9 @@
-# How to integrate MongoDB in NextJS app
+
+## setup environment variables in .env.local before downloading project
+`MONGODB_URI = mongodbconnectionString`
+`NEXT_PUBLIC_HOST = host url`
+
+## How to integrate MongoDB in NextJS app -- lib/mongodb.js
 [See Here](https://www.codewithharry.com/blogpost/%60how-to-integrate-mongodb-into-your-nextjs-apps%60/)
 
 - create a lib folder 
@@ -8,10 +13,11 @@
 - NODE_ENV variable determines if the app is running in development or production.
 - module exports clientPromise, which is either the global client connection or a newly created one, based on the environment
 
-This is extremely necessary so that each new request does not create a new connection to mongodb which can lead to connection saturation
+This is extremely necessary so that each new request does not create a new connection to mongodb which can lead to connection saturation in development
 
 ## /shorten/page.js -- handle form requests and generate url with api communication
 - generates the short url and displays it
+- fetches all previously generated short urls
 
 ## /api/generate/route.js -- creating API Endpoint
 - This handles any HTTP Requests
