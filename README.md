@@ -25,7 +25,7 @@ This is extremely necessary so that each new request does not create a new conne
 
 ## [shortUrl]/page.js -- used for redirection to corresponding shortUrl
 - creates dynamic route with parameter changing and getting set as the shortUrl
-- redirect to 
+- redirect to url if found else back to host home page     
 
 ## Deploy on Vercel
 
