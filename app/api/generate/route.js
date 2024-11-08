@@ -29,5 +29,5 @@ export async function POST(request) {
         shortUrl : body.shortUrl
     })
     // send response for successful generation
-    return Response.json({ sucess:true ,error:false ,message: 'URL generated successfully' })
+    return Response.json({ sucess:true ,error:false , message: 'URL generated successfully' })
 }
