@@ -18,27 +18,26 @@ const Shorten = () => {
     const [generated, setGenerated] = useState(false);
 
     // function to handle change
-    const handleChange = ()=>{
-        
+    const handleChange = () => {
+
     }
 
     return (
-        <div>
-            <h1>Generate your short URLs</h1>
-            <div>
-                <input type="text" 
-                    className='p-4 focus:outline-blue-500 '
-                    placeholder='Enter URL...'
+        <div className='mx-auto max-w-lg bg-blue-100 my-16 p-8 rounded-lg flex flex-col gap-4'>
+            <h1 className='font-bold text-2xl'>Generate your short URLs</h1>
+            <div className='flex flex-col gap-2'>
+                <input type="text"
                     value={url}
-                    onChange={handleChange}
-                />
-                <input type="text" 
-className='p-4 focus:outline-blue-500 '
-                    placeholder='Enter preferred short URL'
+                    className='px-4 py-2 focus:outline-blue-600 rounded-md'
+                    placeholder='Enter your URL'
+                    onChange={e => { setUrl(e.target.value) }} />
+
+                <input type="text"
                     value={shortUrl}
-                    onChange={handleChange}
-                />
-                <button>Generate</button>
+                    className='px-4 py-2 focus:outline-blue-600 rounded-md'
+                    placeholder='Enter your preferred short URL text'
+                    onChange={e => { setShortUrl(e.target.value) }} />
+                <button className='bg-blue-500 rounded-lg shadow-lg p-3 py-1 my-3 font-bold text-white'>Generate</button>
             </div>
         </div>
     )
