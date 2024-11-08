@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <nav className='h-16 bg-blue-600 text-white flex justify-between px-3 items-center'>
             <div className='logo font-bold text-xl'>
-                BlinkLinks
+                <Link href={"/"}>BlinkLinks</Link>
             </div>
             <ul className='flex justify-center gap-4 items-center'>
                 <Link href="/"><li>Home</li></Link>
