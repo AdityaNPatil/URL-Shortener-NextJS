@@ -3,8 +3,9 @@
 // client component - because form used here
 'use client'
 
+import ShortUrlList from '@/components/ShortUrlList'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // import hooks
 import { useState } from 'react'
@@ -18,6 +19,10 @@ const Shorten = () => {
     // state to store generated short url
     const [generated, setGenerated] = useState("");
 
+    // state to store all shortURLs as array
+    const [allShortUrls, setAllShortUrls] = useState([]);
+
+    // function to call api as well as generate url 
     const generateURL = () => {
         // API call to shorten url -- from postman
         const myHeaders = new Headers();
@@ -55,6 +60,15 @@ const Shorten = () => {
             });
     }
 
+    // get all short urls and display them as links each time allShortUrls array state is updated
+    async function getAllShortUrls() {
+        const response = await fetch("/api/generate");
+        const data = await response.json();
+        // console.log(data)
+        // data is an array of objects with each object as {url:... , shortUrl:...}
+        setAllShortUrls(data);
+    }
+
     return (
         <div className='mx-auto max-w-lg bg-blue-100 my-16 p-8 rounded-lg flex flex-col gap-4'>
             <h1 className='font-bold text-2xl'>Generate your short URLs</h1>
@@ -88,6 +102,12 @@ const Shorten = () => {
                             <Link href={generated} target='_blank'>{generated}</Link>
                         </code>
                     </>
+                }
+
+                {/* display all generated short urls here on Clicking button*/}
+                <button onClick={getAllShortUrls} className='bg-blue-500 rounded-lg shadow-lg p-3 py-1 my-3 font-bold text-white'>Get Previous Links</button>
+                {allShortUrls && 
+                   <ShortUrlList allShortUrls={allShortUrls}/>
                 }
             </div>
         </div>
