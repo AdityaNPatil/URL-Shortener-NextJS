@@ -23,7 +23,7 @@ export default function Home() {
             .We understand your needs and hence we have created this URL shortener</p>
           <div className='flex gap-3'>
             <Link href="/shorten"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
-            <Link href="/github"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
+            <Link href="https://github.com/AdityaNPatil/URL-Shortener-NextJS" target="_blank"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
           </div>
         </div>
         <div className="flex justify-start relative">   {/* make display relative for relative parent of image*/}
