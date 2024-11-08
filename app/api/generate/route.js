@@ -40,12 +40,11 @@ export async function GET() {
         const collection = db.collection("urlcol");
 
         // Fetch all documents as an array
-        const alldocs = await collection.find({}).toArray();
+        const alldocs = await collection.find().toArray();
 
         // Return the response as an array of objects containing `url` and `shortUrl`
-        return new Response(JSON.stringify(alldocs), {
-            headers: { 'Content-Type': 'application/json' }
-        });
+        return Response.json(alldocs);
+        
     } catch (error) {
         console.error("Error fetching documents:", error);
         return new Response(JSON.stringify({ error: "Failed to fetch documents" }), {
