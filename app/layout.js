@@ -2,6 +2,7 @@ import "./globals.css";
 
 // import components
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // import local Font
 import localFont from "next/font/local";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
