@@ -17,11 +17,6 @@ const Shorten = () => {
     // state to show wether short url generated
     const [generated, setGenerated] = useState(false);
 
-    // function to handle change
-    const handleChange = () => {
-
-    }
-
     return (
         <div className='mx-auto max-w-lg bg-blue-100 my-16 p-8 rounded-lg flex flex-col gap-4'>
             <h1 className='font-bold text-2xl'>Generate your short URLs</h1>
