@@ -10,9 +10,16 @@
 
 This is extremely necessary so that each new request does not create a new connection to mongodb which can lead to connection saturation
 
+## /shorten/page.js -- handle form requests and generate url with api communication
+- generates the short url and displays it
+
 ## /api/generate/route.js -- creating API Endpoint
 - This handles any HTTP Requests
 - This is where MongoDB operations are done based on request 
+
+## [shortUrl]/page.js -- used for redirection to corresponding shortUrl
+- creates dynamic route with parameter changing and getting set as the shortUrl
+- redirect to 
 
 ## Deploy on Vercel
 
