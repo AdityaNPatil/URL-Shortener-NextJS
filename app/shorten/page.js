@@ -3,6 +3,7 @@
 // client component - because form used here
 'use client'
 
+import Link from 'next/link'
 import React from 'react'
 
 // import hooks
@@ -79,7 +80,14 @@ const Shorten = () => {
 
                 {/* display generated url -- done in generateURL function */}
                 {generated &&
-                    <code>{generated}</code>
+                    <>
+                        <span className='font-bold text-lg'>
+                            Your Link
+                        </span>
+                        <code>
+                            <Link href={generated} target='_blank'>{generated}</Link>
+                        </code>
+                    </>
                 }
             </div>
         </div>
