@@ -15,7 +15,7 @@ const Navbar = () => {
                 <Link href="/contact"><li>Contact Us</li></Link>
                 <li className='flex gap-3'>
                     <Link href="/shorten"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>Try Now</button></Link>
-                    <Link href="https://github.com/AdityaNPatil/URL-Shortener-NextJS"><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
+                    <Link href="https://github.com/AdityaNPatil/URL-Shortener-NextJS" target='_blank'><button className='bg-blue-400 shadow-lg p-2 py-1 rounded-lg font-bold hover:bg-blue-500 transition'>GitHub</button></Link>
                 </li>
             </ul>
         </nav>
