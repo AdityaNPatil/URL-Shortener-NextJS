@@ -32,3 +32,14 @@ This is extremely necessary so that each new request does not create a new conne
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### Steps
+- Open Vercel
+- Deploy project from GitHub
+- Environment Variables (Initially)
+    - MONGODB_URI = mongodbLocalhostConnString
+    - NEXT_PUBLIC_HOST = localhost
+- Create MongoDB DB on Atlas and copy connection string
+- Environment Variable Update
+    - MONGODB_URI = `<dbUsername><dbPassword>/connectonString`
+    - NEXT_PUBLIC_HOST = `https://<yourdomain>.vercel.app`
