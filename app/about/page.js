@@ -61,29 +61,6 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Testimonials Section */}
-            <section className="py-16 bg-blue-50">
-                <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-3xl font-bold text-blue-800 mb-8">What Our Users Say</h2>
-                    <div className="flex flex-col md:flex-row gap-8">
-                        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-md mx-auto">
-                            <p className="text-blue-700">"BlinkLinks made link sharing a breeze. Love the custom URL feature!"</p>
-                            <p className="mt-4 font-semibold text-blue-800">— Sarah Williams</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-md mx-auto">
-                            <p className="text-blue-700">
-                                "The analytics helped us understand our audience better. Highly recommended!"
-                            </p>
-                            <p className="mt-4 font-semibold text-blue-800">— Mike Johnson</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-md mx-auto">
-                            <p className="text-blue-700">"Simple and effective! Exactly what I was looking for in a URL shortener."</p>
-                            <p className="mt-4 font-semibold text-blue-800">— Emily Clark</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* Call to Action Section */}
             <section className="py-16 bg-gradient-to-r from-blue-300 to-blue-500 text-center text-white">
                 <h2 className="text-3xl font-bold mb-4">Ready to Start Shortening URLs?</h2>
