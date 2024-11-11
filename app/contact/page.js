@@ -25,7 +25,7 @@ export default function Contact() {
       {/* Page Title */}
       <h1 className="text-4xl font-bold text-blue-800 mb-8">Contact Us</h1>
       <p className="text-lg text-blue-700 mb-8 max-w-lg text-center">
-        We'd love to hear from you! Whether you have a question about our service, need support, or just want to say hello, drop us a message below.
+        We&apos;d love to hear from you! Whether you have a question about our service, need support, or just want to say hello, drop us a message below.
       </p>
 
       {/* Contact Form */}
